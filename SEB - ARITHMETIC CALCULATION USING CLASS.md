@@ -4,37 +4,50 @@
 ---
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
+To write a python program to perform multiplication and floor division operation using class and if,elif..note:
+
+class name should be CSE, function name should be setvalues( to set the values of a and b) , mul and div
+
+case : choice 1 ->perform multiplication ,choice 2-> perform division ,  choice 0 -> exiting, other choices -> print 'invalid choice'
+
+
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
+1. Read two numbers `a` and `b` from the user.  
+2. Calculate `a * b` and store it as multiplication result.  
+3. Calculate `a / b` (integer division) and store it as division result.  
+4. Read a number `n` from the user as a choice.  
+5. If `n` is less than 0 or greater than 2:  
+   - Print `"Invalid choice"`.  
+6. If `n` is 1:  
+   - Print the multiplication result.  
+7. If `n` is 2:  
+   - Print the division result.  
+8. Print `"Exiting!"`.
 
----
+
 
 ### PROGRAM
 
 ```
+Reg no-212223070007
+Name-Gopinath G
+
+a=int(input())
+b=int(input())
+add=a*b
+div=int(a/b)
+n=int(input())
+if n<0 or n>2:
+    print("Invalid choice")
+elif n==1:
+    print(f"Result:  {add}")
+elif n==2:
+    print(f"Result:  {div}")
+print("Exiting!")
 
 
 
@@ -42,4 +55,12 @@ To write a Python program to perform addition and division operations using a cl
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/e978d748-03f5-485b-8bd5-07460f3e8d49)
+
 ### RESULT
+Thus the python program to perform multiplication and floor division operation using class and if,elif..note:
+
+class name should be CSE, function name should be setvalues( to set the values of a and b) , mul and div
+
+case : choice 1 ->perform multiplication ,choice 2-> perform division ,  choice 0 -> exiting, other choices -> print 'invalid choice'
+was executed successfully
