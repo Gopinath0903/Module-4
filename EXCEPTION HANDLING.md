@@ -4,31 +4,51 @@
 ---
 
 ### AIM  
-To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
+ Write a python program for solving following error using exception handling 
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read a string `input_str` from the user using `input()`.  
-3. Split the input string using commas (`,`) to create a list of grades.  
-4. Use a `try` block to attempt converting each item in the grades list to an integer and store the result in `l1`.  
-5. If the conversion is successful, print the list `l1` containing the integer values.  
-6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
-7. Terminate the program.
 
----
+1. Create an empty list called `lst`.
+
+2. Read an integer `num` from the user.
+
+3. Repeat the following steps `num` times:
+   - Read an integer from the user.
+   - Add (append) it to the list `lst`.
+
+4. Try to do the following:
+   - Print the entire list.
+   - Print the value at index 6 of the list.
+
+5. If index 6 does not exist, print `"6 is not accepted"`.
+
 
 ### PROGRAM
 
 ```
-Reg.No
-Name
+Reg.No-212223070007
+Name-Gopinath G
 Add Your Code Here
-
+lst=[]
+def index():
+    for i in range(num):
+        n=int(input())
+        lst.append(n)
+num=int(input())
+index()
+try:
+    print(lst)
+    print(lst[6])
+except:
+    print("6 is not accepted")
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/86668301-0c2f-45e4-beaf-fa93d6710b0c)
+
 
 ### RESULT
+Thus the python program for solving following error using exception handling was executed successfully
